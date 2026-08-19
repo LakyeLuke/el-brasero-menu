@@ -17,7 +17,7 @@
   --nero-alt:#0c0908;
   --arancio:#e3900e;
   --crema:#F5EFE3;
-  --cuoio:#a06d54;
+  --cuoio:#c08c6d;
   --bruno:#4e2d1e;
   --rail-h:56px;
 }
@@ -64,8 +64,20 @@ a{color:inherit}
   box-shadow:0 0 0 1px rgba(245,239,227,.14), 0 8px 22px rgba(227,144,14,.2);
 }
 .wa svg{width:17px;height:17px;fill:currentColor;flex:none}
+.orari{
+  margin-top:12px;display:inline-block;padding:7px 16px;
+  border:1px solid rgba(78,45,30,.9);border-radius:2px;
+  font-family:'Oswald',sans-serif;font-size:.8rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--crema);
+}
+.orari{
+  margin-top:12px;font-family:'Oswald',sans-serif;font-size:.86rem;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--crema);line-height:1.7;
+}
+.orari span{color:var(--arancio)}
 .claim{
-  margin-top:22px;font-style:italic;color:var(--cuoio);font-size:.9rem;
+  margin-top:22px;font-style:italic;color:var(--crema);font-size:1rem;
+  letter-spacing:.02em;opacity:.92;
 }
 
 /* ---------- FREGIO (motivo del logo) ---------- */
@@ -138,6 +150,8 @@ main{padding-bottom:10px}
   font-family:'Barlow',sans-serif;font-size:.82rem;font-weight:400;
   color:var(--cuoio);letter-spacing:.02em;text-transform:none;
 }
+.ast{color:var(--arancio);font-size:.72em;font-weight:700;margin-left:2px}
+
 /* formati multipli (birre, vini, bibite) */
 .formati{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
 .formati span{
@@ -210,6 +224,7 @@ html{scroll-behavior:smooth}
   <p class="hero__addr" style="margin-top:16px">
     <strong>Viale Fontana Blu</strong><br>81030 Castel Volturno (CE)
   </p>
+  <p class="orari">Tutti i giorni 19:00 – 01:30<br><span>mercoledì chiuso</span></p>
   <a class="wa" href="https://wa.me/393509017016">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a13 13 0 0 1-6.6-5.8c-.5-.8-.8-1.7-.8-2.5 0-.9.5-1.4.7-1.6.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.5.9 1.1 1.6 1.9 2.2.5.4 1 .6 1.2.7.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l2 .9c.2.1.4.2.4.3.1.2.1.6 0 1Z"/></svg>
     Prenota su WhatsApp
@@ -227,34 +242,36 @@ html{scroll-behavior:smooth}
     <a href="#bloomer">Bloomer</a>
     <a href="#wraps">Wraps</a>
     <a href="#contorni">Contorni</a>
-    <a href="#birre">Birre</a>
+    <a href="#spina">Alla spina</a>
+    <a href="#bottiglia">Bottiglia</a>
     <a href="#vini">Vini</a>
     <a href="#bevande">Bevande</a>
+    <a href="#caffe">Caffè e drink</a>
   </div>
 </nav>
 
 <main>
 
-<!-- ANTIPASTI -->
 <section class="sez" id="antipasti">
   <div class="sez__cap"><h2>Antipasti</h2></div>
 
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Patatine El Brasero</span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Porchetta e scamorza</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Patatine El Brasero</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Bacon e cheddar</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken wings hot</span><i class="voce__punti"></i><span class="voce__prezzo">€5</span></div><p class="voce__desc">5 pz · Alette di pollo messicane.</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken double stick</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">4 pz</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken stick italian</span><i class="voce__punti"></i><span class="voce__prezzo">€6,50</span></div><p class="voce__desc">6 pz</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Patatine porchetta e scamorza<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Patatine fritte El Brasero</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Patatine bacon e cheddar<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Patatine fritte El Brasero</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken wings hot<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€5</span></div><p class="voce__desc">5 pz · alette di pollo messicane.</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken double stick<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">4 pz</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken stick italian<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€6,50</span></div><p class="voce__desc">6 pz</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken ring bacon<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">5 pz</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken ring bacon<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">5 pz</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Straccetti di pollo</span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">5 pz</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Polpettine di melanzane</span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">6 pz · Con cheddar.</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Bandidos</span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">5 pz</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Polpettine di melanzane<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">6 pz · con cheddar.</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Bandidos<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div><p class="voce__desc">5 pz</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Bruschette pomodoro e formaggio</span><i class="voce__punti"></i><span class="voce__prezzo">€3</span></div><p class="voce__desc">2 pz</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Bruschette El Brasero</span><i class="voce__punti"></i><span class="voce__prezzo">€4</span></div><p class="voce__desc">2 pz</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Fagioli tex mex piccanti</span><i class="voce__punti"></i><span class="voce__prezzo">€12</span></div></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Parmigiana di melanzane</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Parmigiana bianca di zucchine</span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Parmigiana di melanzane<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Parmigiana bianca di zucchine<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div></div>
 </section>
 
-<!-- CHEESESTEAK -->
 <section class="sez" id="cheesesteak">
   <div class="sez__cap"><h2>Panini Cheesesteak</h2></div>
 
@@ -262,24 +279,23 @@ html{scroll-behavior:smooth}
   <div class="voce"><div class="voce__top"><span class="voce__nome">Acapulco</span><i class="voce__punti"></i><span class="voce__prezzo">€10</span></div><p class="voce__desc">Cheesesteak di scottona, melanzane grigliate, scamorza, insalata iceberg, bacon.</p></div>
 </section>
 
-<!-- PANINI ROTONDI -->
 <section class="sez" id="rotondi">
   <div class="sez__cap"><h2>Panini Rotondi</h2>
     <p class="sez__nota">Hamburger di scottona 170 g</p></div>
 
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Fort Worth</span><i class="voce__punti"></i><span class="voce__prezzo">€12</span></div><p class="voce__desc">Insalata iceberg, pomodoro, bacon, uovo occhio di bue, cheddar, acciuga.</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Fort Worth</span><i class="voce__punti"></i><span class="voce__prezzo">€12</span></div><p class="voce__desc">Insalata iceberg, pomodoro, bacon, uovo all'occhio di bue, cheddar, acciuga.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Dallas</span><i class="voce__punti"></i><span class="voce__prezzo">€10</span></div><p class="voce__desc">Insalata iceberg, cheddar, cipolla di Tropea, bacon.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Houston</span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Insalata iceberg, scamorza, cipolla caramellata.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Plano</span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Bacon, melanzane a funghetto, cheddar.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Austin</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Scamorza, peperoni saltati in padella.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Tyler</span><i class="voce__punti"></i><span class="voce__prezzo">€10</span></div><p class="voce__desc">Porchetta di Ariccia, funghi trifolati, scamorza, patatine stick fritte.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">El Paso</span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Porchetta di Ariccia, provola, melanzane a funghetto.</p></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Cancun</span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Hamburger di pollo con cornflakes, melanzane a funghetto, provola.</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Cancun<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€9</span></div><p class="voce__desc">Hamburger di pollo con cornflakes<sup class="ast">*</sup>, melanzane a funghetto, provola.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Puebla</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Cotoletta di pollo, patatine stick fritte, sottiletta.</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Tijuana</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Hamburger vegano, insalata iceberg, pomodori.</p></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Trinità</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Salsiccia, friarielli, scamorza.</p></div>
 </section>
 
-<!-- BARBECUE -->
 <section class="sez" id="barbecue">
   <div class="sez__cap"><h2>Barbecue</h2>
     <p class="sez__nota">Carne di scottona selezionata</p></div>
@@ -291,7 +307,6 @@ html{scroll-behavior:smooth}
   <div class="voce"><div class="voce__top"><span class="voce__nome">Tagliata di scottona</span><i class="voce__punti"></i><span class="voce__prezzo">€25</span></div><p class="voce__desc">Circa 300 g · rucola, pomodorini, scaglie di Grana Padano, glassa balsamica.</p></div>
 </section>
 
-<!-- SANDWICHES -->
 <section class="sez" id="sandwiches">
   <div class="sez__cap"><h2>Sandwiches</h2></div>
 
@@ -300,7 +315,6 @@ html{scroll-behavior:smooth}
   <div class="voce"><div class="voce__top"><span class="voce__nome">Tofu teriyaki</span><i class="voce__punti"></i><span class="voce__prezzo">€6,50</span></div><p class="voce__desc">Tofu marinato teriyaki, peperone rosso grigliato, dressing al peperoncino con coriandolo.</p></div>
 </section>
 
-<!-- BLOOMER -->
 <section class="sez" id="bloomer">
   <div class="sez__cap"><h2>Bloomer Breads</h2></div>
 
@@ -309,7 +323,6 @@ html{scroll-behavior:smooth}
   <div class="voce"><div class="voce__top"><span class="voce__nome">Pastrami tartufo</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Pastrami, maionese al tartufo, cipolle arrostite, parmigiano.</p></div>
 </section>
 
-<!-- WRAPS -->
 <section class="sez" id="wraps">
   <div class="sez__cap"><h2>Wraps</h2></div>
 
@@ -317,12 +330,11 @@ html{scroll-behavior:smooth}
   <div class="voce"><div class="voce__top"><span class="voce__nome">Chicken fajitas</span><i class="voce__punti"></i><span class="voce__prezzo">€8</span></div><p class="voce__desc">Ricetta originale messicana.</p></div>
 </section>
 
-<!-- CONTORNI -->
 <section class="sez" id="contorni">
   <div class="sez__cap"><h2>Contorni</h2>
     <p class="sez__nota">Porzione singola &nbsp;·&nbsp; al piatto</p></div>
 
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Patatine fritte El Brasero</span><i class="voce__punti"></i><span class="voce__prezzo">€2 · €5</span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Patatine fritte El Brasero<sup class="ast">*</sup></span><i class="voce__punti"></i><span class="voce__prezzo">€2 · €5</span></div></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Patate al forno</span><i class="voce__punti"></i><span class="voce__prezzo">€2,50 · €6</span></div></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Peperoni saltati in padella</span><i class="voce__punti"></i><span class="voce__prezzo">€2 · €5</span></div></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Funghi trifolati</span><i class="voce__punti"></i><span class="voce__prezzo">€2,50 · €6</span></div></div>
@@ -341,40 +353,55 @@ html{scroll-behavior:smooth}
   <div class="voce"><div class="voce__top"><span class="voce__nome">Zucca</span><i class="voce__punti"></i><span class="voce__prezzo">€2 · €5</span></div></div>
 </section>
 
-<!-- BIRRE -->
-<section class="sez" id="birre">
-  <div class="sez__cap"><h2>Birre alla Spina</h2></div>
+<section class="sez" id="spina">
+  <div class="sez__cap"><h2>Alla Spina</h2></div>
 
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Radeberger</span></div>
-    <div class="formati"><span>30 cl <b>€4</b></span><span>50 cl <b>€5,50</b></span></div></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Tennent's Strong Extra</span></div>
-    <div class="formati"><span>25 cl <b>€4</b></span><span>50 cl <b>€6</b></span></div></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Guinness</span></div>
-    <div class="formati"><span>25 cl <b>€3,50</b></span><span>50 cl <b>€6,50</b></span></div></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Corsendonk Rousse</span></div>
-    <div class="formati"><span>30 cl <b>€5,50</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Radeberger</span></div><div class="formati"><span>30 cl <b>€4</b></span><span>50 cl <b>€5,50</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Tennent's Strong Extra</span></div><div class="formati"><span>25 cl <b>€4</b></span><span>50 cl <b>€6</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Guinness</span></div><div class="formati"><span>25 cl <b>€3,50</b></span><span>50 cl <b>€6,50</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Corsendonk Rousse</span></div><div class="formati"><span>30 cl <b>€5,50</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Pepsi alla spina</span></div><div class="formati"><span>30 cl <b>€2,50</b></span><span>40 cl <b>€3,50</b></span></div></div>
 </section>
 
-<!-- VINI -->
+<section class="sez" id="bottiglia">
+  <div class="sez__cap"><h2>Birre in Bottiglia</h2></div>
+
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Kasteel Triple</span></div><div class="formati"><span>33 cl <b>€7</b></span><span>75 cl <b>€14</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Kasteel Rouge</span></div><div class="formati"><span>33 cl <b>€6</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Kasteel Bier Donker</span></div><div class="formati"><span>33 cl <b>€6</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Corsendonk</span></div><div class="formati"><span>75 cl <b>€14</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Brigant</span></div><div class="formati"><span>33 cl <b>€6</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Norbertus Hefeweizen</span></div><div class="formati"><span>50 cl <b>€6</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Toccalmalto Zona Cesar</span></div><div class="formati"><span>33 cl <b>€5,50</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Salento Agricola</span></div><div class="formati"><span>33 cl <b>€4</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Igea</span></div><div class="formati"><span>33 cl <b>€5</b></span></div><p class="voce__desc">Senza glutine.</p></div>
+</section>
+
 <section class="sez" id="vini">
   <div class="sez__cap"><h2>Vini e Sangria</h2></div>
 
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Falco Bruno</span></div>
-    <div class="formati"><span>calice 25 cl <b>€3</b></span><span>50 cl <b>€5,50</b></span><span>1 lt <b>€9</b></span></div></div>
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Sangria</span></div>
-    <div class="formati"><span>50 cl <b>€6,50</b></span><span>1 lt <b>€12</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Falco Bruno</span></div><div class="formati"><span>calice 25 cl <b>€3</b></span><span>50 cl <b>€5,50</b></span><span>1 lt <b>€9</b></span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Sangria</span></div><div class="formati"><span>50 cl <b>€6,50</b></span><span>1 lt <b>€12</b></span></div></div>
 </section>
 
-<!-- BEVANDE -->
 <section class="sez" id="bevande">
   <div class="sez__cap"><h2>Bevande</h2></div>
 
-  <div class="voce"><div class="voce__top"><span class="voce__nome">Pepsi</span></div>
-    <div class="formati"><span>30 cl <b>€2,50</b></span><span>40 cl <b>€3,50</b></span></div></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Fanta</span><i class="voce__punti"></i><span class="voce__prezzo">€3</span></div><p class="voce__desc">33 cl</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Sprite</span><i class="voce__punti"></i><span class="voce__prezzo">€3</span></div><p class="voce__desc">33 cl</p></div>
   <div class="voce"><div class="voce__top"><span class="voce__nome">Acqua Plose</span><i class="voce__punti"></i><span class="voce__prezzo">€2,50</span></div><p class="voce__desc">50 cl</p></div>
 </section>
+
+
+<!-- CAFFE E DRINK -->
+<section class="sez" id="caffe">
+  <div class="sez__cap"><h2>Caff&egrave; e Drink</h2></div>
+
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Caffè</span><i class="voce__punti"></i><span class="voce__prezzo">€1</span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Amari</span><i class="voce__punti"></i><span class="voce__prezzo">€3</span></div></div>
+  <div class="voce"><div class="voce__top"><span class="voce__nome">Drink</span><i class="voce__punti"></i><span class="voce__prezzo">€6</span></div></div>
+</section>
+
 
 </main>
 
@@ -387,6 +414,7 @@ html{scroll-behavior:smooth}
   <p class="footer__nome">El Brasero</p>
   <p class="footer__riga">
     Viale Fontana Blu — 81030 Castel Volturno (CE)<br>
+    Tutti i giorni 19:00 – 01:30 · mercoledì chiuso<br>
     <a href="https://wa.me/393509017016" style="color:var(--arancio);text-decoration:none">WhatsApp 350 901 7016</a>
   </p>
 
@@ -403,7 +431,8 @@ html{scroll-behavior:smooth}
   </div>
 
   <div class="avvisi">
-    <strong>Coperto €2 a persona.</strong><br>
+    <strong>Coperto €2 a persona.</strong><br><br>
+    <span class="ast">*</span> Prodotto surgelato o congelato all'origine.<br><br>
     Gli alimenti possono contenere allergeni: si prega di chiedere al personale di sala il contenuto dei piatti.
   </div>
 </footer>
